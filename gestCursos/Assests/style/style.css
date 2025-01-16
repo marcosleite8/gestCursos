@@ -1,0 +1,69 @@
+﻿.logo {
+    height: 50px;
+}
+
+.slogan {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.search-bar {
+    position: relative;
+}
+
+    .search-bar input {
+        padding-right: 40px;
+    }
+
+    .search-bar .search-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-second {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+/* Remover traçado do hamburger */
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* Centralizando os itens da segunda barra de navegação */
+.navbar-second .navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+/* Garantir que o texto dos itens da segunda barra esteja centralizado */
+.navbar-second .nav-link {
+    text-align: center;
+}
+/* Tornar os itens da barra de navegação em coluna abaixo de 500px */
+@media (max-width: 500px) {
+    .navbar-second .navbar-nav {
+        flex-direction: column; /* Itens em coluna */
+        align-items: center; /* Alinhar ao centro */
+    }
+
+    .navbar-second .nav-link {
+        width: 100%; /* Cada item ocupa toda a largura */
+        text-align: center; /* Texto alinhado ao centro */
+        padding: 10px; /* Espaçamento extra para toque em dispositivos móveis */
+    }
+}
+
+#hover-img .card:hover img {
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+
+/* Modal */
