@@ -11,7 +11,7 @@ namespace gestCursos.pages.gest
 {
 
 
-    public partial class gestIndex
+    public partial class gIndex
     {
     }
 }

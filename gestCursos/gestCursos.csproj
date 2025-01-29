@@ -67,23 +67,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assests\img\Banner20.jpg" />
-    <Content Include="Assests\img\Banner21.jpg" />
-    <Content Include="Assests\img\Banner22.jpg" />
-    <Content Include="Assests\img\cyber-carroucel_1.jpg" />
-    <Content Include="Assests\img\logo.png" />
-    <Content Include="Assests\js\modal-handler.js" />
-    <Content Include="Assests\js\script.js" />
-    <Content Include="Assests\style\style.css" />
+    <Content Include="Assets\img\Banner20.jpg" />
+    <Content Include="Assets\img\Banner21.jpg" />
+    <Content Include="Assets\img\Banner22.jpg" />
+    <Content Include="Assets\img\cyber-carroucel_1.jpg" />
+    <Content Include="Assets\img\logo.png" />
+    <Content Include="Assets\js\gestScript.js" />
+    <Content Include="Assets\js\modal-handler.js" />
+    <Content Include="Assets\js\script.js" />
+    <Content Include="Assets\style\style.css" />
+    <Content Include="Assets\style\style_gest.css" />
     <Content Include="Components\modals.html" />
     <Content Include="Components\modalsControl.ascx" />
     <Content Include="pages\front\frontIndex.aspx" />
-    <Content Include="pages\gest\gestIndex.aspx" />
+    <Content Include="pages\gest\gIndex.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\modalsControl.ascx.cs">
       <DependentUpon>modalsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Components\modalsControl.ascx.designer.cs">
       <DependentUpon>modalsControl.ascx</DependentUpon>
@@ -109,19 +112,19 @@
     <Compile Include="pages\gest\gest.Master.designer.cs">
       <DependentUpon>gest.Master</DependentUpon>
     </Compile>
-    <Compile Include="pages\gest\gestIndex.aspx.cs">
-      <DependentUpon>gestIndex.aspx</DependentUpon>
+    <Compile Include="pages\gest\gIndex.aspx.cs">
+      <DependentUpon>gIndex.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\gest\gestIndex.aspx.designer.cs">
-      <DependentUpon>gestIndex.aspx</DependentUpon>
+    <Compile Include="pages\gest\gIndex.aspx.designer.cs">
+      <DependentUpon>gIndex.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="pages\gest\gest.Master" />
     <Content Include="pages\front\front.Master" />
+    <Content Include="pages\gest\gest.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

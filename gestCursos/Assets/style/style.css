@@ -32,20 +32,24 @@ footer {
     background-color: #f8f9fa;
     border-top: 1px solid #ddd;
 }
+
 /* Remover traçado do hamburger */
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
 }
+
 /* Centralizando os itens da segunda barra de navegação */
 .navbar-second .navbar-nav {
     justify-content: center;
     width: 100%;
 }
+
 /* Garantir que o texto dos itens da segunda barra esteja centralizado */
 .navbar-second .nav-link {
     text-align: center;
 }
+
 /* Tornar os itens da barra de navegação em coluna abaixo de 500px */
 @media (max-width: 500px) {
     .navbar-second .navbar-nav {
@@ -64,6 +68,5 @@ footer {
     transform: scale(1.2);
     transition: .3s ease-in-out;
 }
-
 
 /* Modal */

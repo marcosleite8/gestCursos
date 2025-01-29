@@ -4,16 +4,137 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gest Board Cinel</title>
+    <link href="\Assets\style\style_gest.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+
+            <div class="container">
+
+                <!-- Sidebar Navigation -->
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="logo-octocat"></ion-icon>
+                                </span>
+                                <span class="title">Gest Cinel</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="title">Painel Controlo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <span class="title">Utilizadores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </span>
+                                <span class="title">Cursos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="document-text-outline"></ion-icon>
+                                </span>
+                                <span class="title">Documentos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                </span>
+                                <span class="title">Mensagens</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </span>
+                                <span class="title">Configurações</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="information-outline"></ion-icon>
+                                </span>
+                                <span class="title">Ajuda</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                </span>
+                                <span class="title">Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Header -->
+                <div class="main">
+                    <div class="topbar">
+                        <div class="toggle">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </div>
+
+                        <!-- userImage -->
+                        <div class="user">
+                            <div class="user-area dropdown float-right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- Adicione a imagem do usuário -->
+                                    <img id="userAvatar" class="user-avatar rounded-circle" src="<%= Session["UserAvatarUrl"] %>" alt="">
+                                    <!-- Exibe o nome do usuário -->
+                                    <span id="userNameSpan" class="user-name"><%= Session["UserName"] %></span>
+                                </a>
+
+                                <div class="user-menu dropdown-menu">
+                                    <div class="dropdown-item user-profile">Perfil</div>
+                                    <div class="dropdown-item user-messages">Mensagens</div>
+                                    <div class="dropdown-divider"></div>
+                                    <!-- Adiciona uma linha divisória -->
+                                    <div class="dropdown-item user-logout">Sair</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="\Assets\js\gestScript.js"></script>
 </body>
 </html>
